@@ -2,4 +2,4 @@
 ![Resto](images/Resto-thumbnail-image.jpg)
 
 
-deadline - Feb 9 25
+deadline - Feb 25
