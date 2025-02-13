@@ -96,3 +96,28 @@ body{
     height: 80vh;
 }
 
+.popular {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 10px auto; 
+    padding: 20px; 
+
+}
+
+.popular-sec {
+    width: 100%; 
+    overflow: hidden; 
+    border: none;
+    border-radius: 6px;
+
+   
+
+}
+
+.popular-sec img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
