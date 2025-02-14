@@ -96,14 +96,16 @@ body{
     height: 80vh;
 }
 
+
+/*-----------Popular-----------*/
 .popular {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 1100px;
-    margin: 10px auto; 
+    gap: 25px;
+    max-width: 1000px;
+    margin: 50px auto; 
     padding: 20px; 
-
+   
 }
 
 .popular-sec {
@@ -111,13 +113,19 @@ body{
     overflow: hidden; 
     border: none;
     border-radius: 6px;
-
-   
-
+    transition: transform .2s;
+ 
+}
+.popular-sec:hover{
+    transform: scale(0.7);
 }
 
 .popular-sec img {
     width: 100%; 
     height: auto; 
-    display: block; 
+    display: block;
+}
+.popular-sec p{
+    text-align: center;
+    font-weight: 100;
 }
