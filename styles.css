@@ -92,29 +92,44 @@ body{
     border-radius: 2px;
     font-size: 14px;
 }
-.hero-sec img{
+/* .hero-sec img{
     height: 80vh;
-}
+} */
 
 
 /*-----------Popular-----------*/
+
+#popular-section {
+    text-align: center;
+    padding: 25px 0px;
+}
+#popular-section h6{
+    font-weight: lighter;
+    margin: 0;
+    padding: 10px 0px;
+    font-size: 22px;
+    color: #2bb471;
+}
+#popular-section h2{
+   font-size: 28px;
+   padding: 10px 0px;
+   margin: 0;
+}
 .popular {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     max-width: 1000px;
-    margin: 50px auto; 
+    margin: 30px auto; 
     padding: 20px; 
    
 }
-
 .popular-sec {
     width: 100%; 
     overflow: hidden; 
     border: none;
     border-radius: 6px;
     transition: transform .2s;
- 
 }
 .popular-sec:hover{
     transform: scale(0.7);
@@ -125,7 +140,59 @@ body{
     height: auto; 
     display: block;
 }
+
 .popular-sec p{
     text-align: center;
     font-weight: 100;
+}
+
+.popular-sec button{
+    background-color: #0d0d6f;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+/* Responsive*/
+
+@media screen and (max-width: 800px){
+
+    /* Hero */
+    .hero-sec{
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .hero-sec img{
+        height: 300px;
+        width: 300px;
+        padding: 20px 0px;
+      }
+      .hero-sec-content h6{
+        font-size: 16px;
+    }
+    .hero-sec-content h1{
+        font-size: 28px;
+        color: #0d0d6f;
+    }
+    .hero-sec-content p{
+        font-size: 14px;
+    }
+
+    /* Popular */
+    .popular {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        max-width: 1000px;
+        margin: 30px auto; 
+        padding: 20px; 
+       
+    }
+    
 }
