@@ -102,6 +102,7 @@ body{
 #popular-section {
     text-align: center;
     padding: 25px 0px;
+    background-color: #EEEE;
 }
 #popular-section h6{
     font-weight: lighter;
@@ -157,9 +158,90 @@ body{
 }
 
 
-/* Responsive*/
+/* About us */
+#About{
+    padding: 25px;
+}
+#About h5{
+    color: #118B50;
+    font-weight: lighter;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#About h2{
+    text-align: center;
+    font-size: 28px;
+    margin: 0;
+
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 25px 0px;
+}
+.about-img{
+    width: 80%;
+}
+.about-img img{
+   width: 100%;
+}
+.about-content h1{
+    color: #0d0d6f;
+    font-size: 28px;
+}
+.about-content p{
+    color: #5E686D;
+}
+.about-content button{
+    background-color: #0d0d6f;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+
+
+/* Banner */
+.banner{
+    background-image: url(./images/banner-resto.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-attachment:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    font-family: "Montez", serif;
+    font-size: 60px;
+    margin: 0;
+    font-weight: bold;
+}
+.banner p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+
+
+/* ----------------Responsive------------------*/
 
 @media screen and (max-width: 800px){
+
+    /*Navbar*/
+    #navbar ul{
+        display: none;
+    }
 
     /* Hero */
     .hero-sec{
@@ -194,5 +276,60 @@ body{
         padding: 20px; 
        
     }
+
+
+    /*About*/
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0px;
+    }
+    .about-img{
+        width: 100%;
+    }
+    .about-img img{
+       width: 100%;
+    }
+    .about-content{
+        text-align: justify;
+    }
+    .about-content h1{
+        color: #0d0d6f;
+        font-size: 20px;
+    }
+    .about-content p{
+        color: black;
+        font-size: 14px;
+        max-width: 300px;
+    }
+    .about-content button{
+        background-color: #0d0d6f;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 2px;
+        font-size: 14px;
+    }
     
+
+    /* Banner */
+    .banner{
+        background-size: 100%;
+        background-position: center ;
+        height: 160px; 
+        background-attachment: inherit; 
+    }
+    .banner h1{
+        font-family: "Montez", serif;
+        font-size: 28px;
+        margin: 0;
+        font-weight: bold;
+    }
+    .banner p{
+        display: none;
+    }
 }
