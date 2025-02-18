@@ -28,6 +28,11 @@ body{
     list-style: none;
     padding: 8px 15px;
 }
+
+#navbar ul li a{
+  text-decoration: none;
+  color: black;
+}
 #navbar ul li:hover{
     background-color: #1bb965;
     color: white;
@@ -211,7 +216,7 @@ body{
 .banner{
     background-image: url(./images/banner-resto.jpg);
     background-size: cover;
-    height: 60vh;
+    height: 80vh;
     background-attachment:fixed;
     display: flex;
     flex-direction: column;
