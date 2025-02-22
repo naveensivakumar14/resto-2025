@@ -20,9 +20,9 @@
 <body>
 
     <!--Navbar-->
-    <nav id="navbar">
-        <h2> <img class="logo-img" src="./images/logo-icon.png" alt="logo"> Resto.</h2>
-        <ul>
+    <!-- <nav id="navbar">
+        <h2> Resto </h2>
+        <ul class="nav-links" id="nav-links">
             <li>Home</li>
             <li>Dishes</li>
             <li>About</li>
@@ -36,8 +36,31 @@
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
 
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars "  onclick="toggleMenu()"></i>
+        </div>
+
+    </nav> -->
+
+    <nav class="navbar">
+        <div class="logo">Resto</div>
+        
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
     </nav>
 
+    
     <!-- Hero -->
     <div class="slideshow-container">
         <div class="hero-sec">
@@ -215,7 +238,6 @@
         </div>
     </section>
 
-
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
@@ -243,7 +265,19 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.getElementById("menu-toggle");
+            const navLinks = document.getElementById("nav-links");
+            menuToggle.addEventListener("click", function() {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+
     <script src="./script.js"></script>
+   
+
 </body>
 </html>
 
