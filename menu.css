@@ -19,6 +19,15 @@ body{
     font-family: "Montez", serif;
     font-size: 48px;
 }
+.home-icon{
+    position: relative;
+    top: 48%;
+    left: 15%;
+    font-size: 22px;
+}
+.home-icon a{
+    color: black;
+}
 
 
 /* Menu*/
@@ -31,6 +40,7 @@ body{
     font-weight: 600;
     color: #0d0d6f;
 }
+
 .menu-list p{
     /* text-align: center; */
     color: black;
