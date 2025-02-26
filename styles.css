@@ -320,6 +320,17 @@ body{
     padding: 50px 0px;
 
 }
+#Review h4{
+    color: #2bb471;
+    margin: 0;
+    font-size: 22px;
+    font-weight: lighter;
+}
+#Review h1{
+    color: #0d0d6f;
+    margin: 10px 0px;
+    font-size: 28px;
+}
 
 .review{
     display: grid;
@@ -336,6 +347,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .review-sec h3{
    margin: 0;
     font-weight: lighter;
